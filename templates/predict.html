@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predictions</title>
+</head>
+<body>
+
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+
+    <form action="" method="post">
+        <p>
+	    <label for="IW">IW</label>
+	    <input type="text" name="IW">
+		<label for="IF">IF</label>
+	    <input type="text" name="IF">
+		<label for="VW">VW</label>
+	    <input type="text" name="VW">
+		<label for="FP">FP</label>
+	    <input type="text" name="FP">
+		</p>
+	<p>
+	    <input type="submit">
+	</p>
+    </form>
+	<h3> Predictions are:</h3>
+	<pre>
+		<p>{{ prediction }}</p>
+	</pre>
+	
+	
+
+</body>
+</html>
